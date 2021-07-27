@@ -43,14 +43,19 @@ function init() {
 
     })
   
-    // buildPanel('ID_101_210');
-    // buildCharts('ID_101_210');
+    buildPanel('ID_101_210');
+    buildCharts('ID_101_210');
   }
 
-  init()
+function optionChanged(sample_cycle) {
+    buildPanel(sample_cycle);
+    buildCharts(sample_cycle);
+}
+  
+init()
 
 // Building Panel 
-function buildPanel(x) {
+function buildPanel(id) {
     d3.json("2008-2019_GradbySCH_v2.json").then((data) => {
 
         // console.log("OG data", data)
@@ -81,7 +86,7 @@ function buildPanel(x) {
             rest_of_data.push(value)
         }
 
-        var selected_id = grouped_data_1.x
+        var selected_id = grouped_data_1[id]
         console.log("ID_101_210", selected_id) 
 
         // identify panel 
@@ -131,14 +136,7 @@ function buildCharts(id) {
             rest_of_data.push(value)
         }
 
-
-
-        var selected_id = grouped_data.ID_101_210
-
-
-
-
-
+        var selected_id = grouped_data[id]
 
         console.log("selected_id", selected_id) 
 
