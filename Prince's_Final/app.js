@@ -346,8 +346,8 @@ function buildStateChart(id) {
             numGrads.push(value)
         }
 
-        schoolYear.splice(0, 1)
-        numGrads.splice(0, 1)
+        schoolYear.splice(0, -1)
+        numGrads.splice(0, -1)
         // console.log("school year", schoolYear)
 
         var trace_line = {
