@@ -35,6 +35,8 @@
   var layout = {
     title: "Post-Secondary Plans for the Commonwealth of Virginia",
     yaxis: { title: "Number of Students"},
+    width: 1000,
+    height: 600,
     annotations: [
       {
         xref: 'paper',
@@ -93,6 +95,21 @@ var traceData2 = [traceVA, traceNAT, traceHigh,traceLow];
 var layout2 = {
   title: "National Teacher Salary Comparison",
   yaxis: { title: "Salary (In Dollars)"},
+  width: 915,
+  height: 500,
+  images: [
+    {
+      x: 1,
+      y: 1.05,
+      sizex: 0.2,
+      sizey: 0.2,
+      source: "Assets/Images/America.jpeg",
+      xanchor: "right",
+      xref: "paper",
+      yanchor: "bottom",
+      yref: "paper"
+    }
+  ],
   annotations: [
     {
       xref: 'paper',
@@ -118,7 +135,7 @@ var traceTeach = {
   x: teacher_pay.map(row => row.Year),
   y: teacher_pay.map(row => row.avg_teach),
   type: "line",
-  name: "Virginia Teacher Average Salary"
+  name: "Teacher Average Salary"
 };
 
 // Trace 2 
@@ -126,13 +143,19 @@ var tracePrinc = {
   x: teacher_pay.map(row => row.Year),
   y: teacher_pay.map(row => row.avg_princ),
   type: "line",
-  name: "Virginia Principle Average Salary"
+  name: "Principle Average Salary",
+  line: {
+    color: 'rgb(52, 212, 253)'
+  }
 };
 var traceAsst = {
   x: teacher_pay.map(row => row.Year),
   y: teacher_pay.map(row => row.avg_asst),
   type: "line",
-  name: "Virginia Assistant Principle Average Salary"
+  name: "Assistant Principle Average Salary",
+  line: {
+    color: 'rgb(194, 102, 253)'
+  }
 };
 
 
@@ -144,6 +167,21 @@ var traceData3 = [traceTeach, tracePrinc, traceAsst];
 var layout3 = {
   title: "Virginia Salary Comparison",
   yaxis: { title: "Salary (In Dollars)"},
+  width: 1000,
+  height: 500,
+  images: [
+    {
+      x: 1,
+      y: 1.05,
+      sizex: 0.2,
+      sizey: 0.2,
+      source: "Assets/Images/va.png",
+      xanchor: "right",
+      xref: "paper",
+      yanchor: "bottom",
+      yref: "paper"
+    }
+  ],
   annotations: [
     {
       xref: 'paper',
