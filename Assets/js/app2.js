@@ -34,7 +34,24 @@
 
   var layout = {
     title: "Post-Secondary Plans for the Commonwealth of Virginia",
-    
+    yaxis: { title: "Number of Students"},
+    annotations: [
+      {
+        xref: 'paper',
+        yref: 'paper',
+        x: 0.5,
+        y: -0.1,
+        xanchor: 'center',
+        yanchor: 'top',
+        text: 'Source: Virginia Deparment of Education (DOE)',
+        showarrow: false,
+        font: {
+            family: 'Arial',
+            size: 12,
+            color: 'rgb(150,150,150)'
+        }
+      }
+    ]
   };
 
   Plotly.newPlot("line-next", traceData, layout)
@@ -75,7 +92,24 @@ var traceData2 = [traceVA, traceNAT, traceHigh,traceLow];
 
 var layout2 = {
   title: "National Teacher Salary Comparison",
-  
+  yaxis: { title: "Salary (In Dollars)"},
+  annotations: [
+    {
+      xref: 'paper',
+      yref: 'paper',
+      x: 0.5,
+      y: -0.1,
+      xanchor: 'center',
+      yanchor: 'top',
+      text: 'Source: Virginia Deparment of Education (DOE) and National Science Foundation',
+      showarrow: false,
+      font: {
+          family: 'Arial',
+          size: 12,
+          color: 'rgb(150,150,150)'
+      }
+    }
+  ]
 };
 
 Plotly.newPlot("line-avg", traceData2, layout2)
@@ -109,7 +143,24 @@ var traceData3 = [traceTeach, tracePrinc, traceAsst];
 
 var layout3 = {
   title: "Virginia Salary Comparison",
-  
+  yaxis: { title: "Salary (In Dollars)"},
+  annotations: [
+    {
+      xref: 'paper',
+      yref: 'paper',
+      x: 0.5,
+      y: -0.1,
+      xanchor: 'center',
+      yanchor: 'top',
+      text: 'Source: Virginia Deparment of Education (DOE)',
+      showarrow: false,
+      font: {
+          family: 'Arial',
+          size: 12,
+          color: 'rgb(150,150,150)'
+      }
+    }
+  ]
 };
 
 Plotly.newPlot("line-comp", traceData3, layout3)
