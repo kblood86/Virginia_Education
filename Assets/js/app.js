@@ -44,8 +44,8 @@ function init() {
 
     })
 
-    buildPanel('ID_101_210');
-    buildCharts('ID_101_210');
+    buildPanel('');
+    buildCharts('');
 }
 
 function optionChanged_sch(sample_cycle) {
@@ -301,7 +301,7 @@ function init_state() {
 
     })
 
-    buildStateChart('Total Graduates');
+    buildStateChart('');
 
 }
 
@@ -649,7 +649,7 @@ d3.json("Assets/data/State_level_info.json").then((data) => {
                 y: 1.05,
                 xanchor: 'left',
                 yanchor: 'bottom',
-                text: `State Chart - Static `,
+                text: `Virginia Demographic Overview `,
                 font: {
                     family: 'Arial',
                     size: 30,

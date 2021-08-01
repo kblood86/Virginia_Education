@@ -62,32 +62,15 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Virginia School Board Dashboard</h1>
-        <p>Data for School years 2008 through 2019</p>
+        <img src="Assets/Images/va2.png" alt="VDOE LOGO">
+        <h2>Data for School years 2008 through 2019</h2>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="School">
-          <h5>Division/School ID:</h5>
-          <select id="selDataset_sch" onchange="optionChanged_sch(this.value)">
-            <option value=""></option>
-          </select>
-        </div>
-        <br>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h4 class="panel-title">School's Infomation (2008 - 2019)</h4>
-          </div>
-          <div id="sample-metadata-sch" class="panel-body"></div>
-        </div>
-      </div>
-      <div class="col-md-8">
-        <div id="line-school"></div>
-      </div>
-      <!-- <div class="col-md-5">
-        <div id="gauge"></div>
-      </div> -->
+    
+    <div class="col-md-12">
+      <div id="line-State-static"></div>
     </div>
+    
     <hr>
     <!-- <div class="col-md-12 text-center">
       <h1>State level detail</h1>
@@ -113,9 +96,30 @@
 
     </div>
     <hr>
-    <div class="col-md-12">
-      <div id="line-State-static"></div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="School">
+          <h5>Division/School ID:</h5>
+          <select id="selDataset_sch" onchange="optionChanged_sch(this.value)">
+            <option value=""></option>
+          </select>
+        </div>
+        <br>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">School's Infomation (2008 - 2019)</h4>
+          </div>
+          <div id="sample-metadata-sch" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div id="line-school"></div>
+      </div>
+      <!-- <div class="col-md-5">
+        <div id="gauge"></div>
+      </div> -->
     </div>
+    
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>

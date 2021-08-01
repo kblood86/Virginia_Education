@@ -51,7 +51,8 @@
 
 h1, h2, h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: lightgreen;
+  font-size: 20px;
+  color: black;
 }
 
 h1{
@@ -88,3 +89,9 @@ h1{
   margin: 0px 0px 0px 40px;
 }
 
+img {
+  padding: 14px;
+  margin: 20px 20px 20px 40px;
+  height: 150px;
+  width: 280px;
+}
