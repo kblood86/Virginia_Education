@@ -21,3 +21,5 @@ Even with these limitations, we were able to draw several conclusions including:
 2) Larger communities have higher graduation. 
 3) Caucasians have higher graduation rates than other races. 
 4) No major change in post-secondary plans. Students are continuing to pursue higher education.
+
+<img width="1145" alt="Screen Shot 2021-09-09 at 12 21 57 PM" src="https://user-images.githubusercontent.com/77282780/132724475-b9744fbd-d83a-4aab-8525-c49dd283d554.png">
